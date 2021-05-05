@@ -5,11 +5,11 @@
         <style>
             @font-face {
                 font-family: sansbold;
-                src: url(sansbold.ttf);
+                src: url(/fonts/sansbold.ttf);
             }
             @font-face {
                 font-family: sanslight;
-                src: url(sanslight.ttf);
+                src: url(/fonts/sanslight.ttf);
             }
             body{
                 margin:0px;
@@ -47,9 +47,14 @@
             {
                 font-size: 24px;
                 color:#007acc;
+                position: relative;
+                left: 50%;
+                transform: translate(-50%,0%);
             }
-            hr{
-                color:#00000000
+            hr
+            {
+                color:#00000000;
+                opacity: 0%;
             }
             .link
             {
@@ -68,6 +73,53 @@
                 transition: 0.3s;
                 text-decoration:wavy;
             }
+            .dropdown
+            {
+                width: 40%;
+                border:solid rgb(219, 216, 216) 1px;
+                font-size: 19px;
+                min-width: 100px;
+                padding:3px;
+                position: relative;
+                left:50%;
+                transform: translate(-50%,0%);
+
+            }
+            .dropdown:active
+            {
+                border: solid #ffda52;
+                
+            }
+            .content
+            {
+                font-family: sansbold;
+                width: 100%;
+            }
+            .btn
+            {
+                background-color: #ffda52;
+                border: solid #ffda52;
+                color:rgb(56, 83, 236);
+                font-family: sansbold;
+                font-size: 19px;
+                border-radius: 9px;
+                padding: 4px;
+                width: 100px;
+                height: 40px;
+                position: relative;
+                left:50%;
+                transform: translate(-50%,-0%);
+            }
+            .btn:active
+            {
+                width:95px;
+                height: 35px;
+            }
+            .btnlink
+            {
+                text-decoration: none;
+                
+            }
         </style>
     </head>
     <body>
@@ -77,22 +129,50 @@
         </header>
         <article>
             <div class="content">
-                <hr/>
-                <div class="heading"><b>Download CSE Jntuk R16 materials</b></div>
-                <hr/>
-                <a href="one_one.html" class="link">1-1 Semester</a>
-                <a href="one_two.html" class="link">1-2 Semester</a>
-                <hr/>
-                <a href="two_one.html" class="link">2-1 Semester</a>
-                <a href="two_two.html" class="link">2-2 Semester</a>
-                <hr/>
-                <a href="three_one.html" class="link">3-1 Semester</a>
-                <a href="three_two.html" class="link">3-2 Semester</a>
-                <hr/>
-                <a href="four_one.html" class="link">4-1 Semester</a>
-                <a href="four_two.html" class="link">4-2 Semester</a>
-                <hr/>
+                <hr>
+                <div class="heading"><b>Download Jntuk Materials</b></div>
+                <hr>
+                <select name="Regulation" id="reg" class="dropdown" >
+                    <option value="R16">R16</option>
+                    <option value="R20">R20</option>
+                </select>
+                <hr>
+                <select name="Branch" id="branch" class="dropdown">
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="MECH">MECH</option>
+                    <option value="IT">IT</option>
+                </select>
+                <hr>
+                <select name="Year" class="dropdown" id="year">
+                    <option value="1-1">1-1 Semester</option>
+                    <option value="1-2">1-2 Semester</option>
+                    <option value="2-1">2-1 Semester</option>
+                    <option value="2-2">2-2 Semester</option>
+                    <option value="3-1">3-1 Semester</option>
+                    <option value="3-2">3-2 Semester</option>
+                    <option value="4-1">4-1 Semester</option>
+                    <option value="4-2">4-2 Semester</option>
+
+                </select>    
+                <hr>
+                <a href="#" id="btnlink" class="btnlink">  <button class="btn" id="submit" onclick="submit()">Submit</button></a>
+                
             </div>
         </article>
+        <script>
+            function submit()
+            {
+                reg=document.getElementById("reg").value;
+                branch=document.getElementById("branch").value;
+                year=document.getElementById("year").value;
+                var btn=document.getElementById("btnlink")
+                btn.href="Regulation/"+reg+"/"+branch+"/"+year+"/"+year+".html";
+
+                
+                
+            }
+        </script>
     </body>
 </html>

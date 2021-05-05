@@ -1,18 +1,20 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width,intial-scale=1"/>
         <title>First year first semester</title>
         <style>
-            @font-face {
-                font-family: sansbold;
-                src: url(sansbold.ttf);
-            }
-            @font-face {
-                font-family: sanslight;
-                src: url(sanslight.ttf);
-            }
+           @font-face {
+               font-family: sansbold;
+               src: url(/fonts/sansbold.ttf);
+           }
+           @font-face {
+               font-family: sanslight;
+               src: url(/fonts/sanslight.ttf);
+           }
             body{
                 margin:0px;
                 padding:0px;
+                font-family: 'Open Sans';
             }
             header
             {
@@ -45,30 +47,31 @@
             }
             hr{
                 color: #00000000;
+                opacity: 0%;
             }
             article
             {
                 padding: 5px;
                 font-family: sanslight;
             }
+            .link
+            {
+                color:rgb(56, 83, 236);
+                text-decoration: none;
+                font-size: 22px;
+                padding: 3px;
+
+            }
+            .link:active
+            {
+                background: rgb(56, 83, 236);
+                color:white;
+                border:solid none;
+                border-radius: 10px;
+            }
             .links
             {
                 display:grid;
-            }
-            .link
-            {
-                color:#24a1a5;
-                font-size: 20px;
-                padding: 5px;
-                transition: 0.3s;
-                
-
-            }
-            
-            .chead
-            {
-                text-decoration: underline;
-                color:#0b7f83
             }
         </style>
     </head>
@@ -79,20 +82,17 @@
         </header>
         <article>
             <hr/>
-                <div class="heading"><b>Download 1-1 Semester materials</b></div>
-                <hr/>
-                <div class=links>
-                    <b><h1 class="chead">Subjects</h1></b>
-                    <a href="#" class="link">English I</a>
-                    <a href="#" class="link">Mathematics I</a>
-                    <a href="#" class="link">Mathematics II</a>
-                    <a href="#" class="link">Applied Physics</a>
-                    <a href="#" class="link">Computer Programming</a>
-                    <a href="#" class="link">Engineering Drawing</a>
-                    
-
-
+                <div class="heading"><b>Download R16 CSE 3-2 Semester materials</b></div>
+                <hr>
+                <div class="links">
+                    <a href="#" class="link">Computer Networks</a>
+                    <a href="#" class="link">Data Warehousing and Mining</a>
+                    <a href="#" class="link">Design and Analysis of Algorithms</a>
+                    <a href="#" class="link">Artificial Intelligence</a>
+                    <a href="#" class="link">Software Testing and Methodologies</a>
                 </div>
+               
+
         </article>
     </body>
 
