@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,intial-scale=1"/>
+        <title>
+            Happy birthday sudheer
+        </title>
+        <style>
+            @font-face {
+                font-family: sans;
+                src: url(sans.ttf);
+            }
+            body{
+                background-color: black;
+            }
+            .greet{
+                font-family: sans;
+                position: relative;
+                left:50%;
+                color:white;
+                transform: translate(-50%,0%);
+                animation-name: text;
+                font-size: 50px;
+                animation-duration: 1s ;
+                animation-delay: 1s;
+                animation-iteration-count: infinite;
+                
+            }
+            .name{
+                font-family: sans;
+            }
+            .row{
+                
+                position: fixed;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+
+            }
+            @keyframes colorchange
+            {
+                0%{ box-shadow: blue 1px 1px 50px; }
+                25%{ box-shadow: red 1px 1px 60px;}
+                50%{ box-shadow: green 1px 1px 70px;}
+                75%{ box-shadow: yellow 1px 1px 80px;}
+                100%{ box-shadow: orange 1px 1px 90px;}
+            }
+            .image
+            {
+                border-radius: 50%;
+                border: blue 1px;
+                width: 150px;
+                height: 150px;
+                position: relative;
+                left:50%;
+                transform: translate(-50%,0%);
+                animation-name: colorchange;
+                animation-duration: 0.8s ;
+                animation-iteration-count: infinite;
+                
+               
+
+            }
+            @keyframes text{
+                from{font-size: 60px;}
+                to{font-size: 65px;}
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="row">
+            <img class ="image" src="img.jpg"/>
+            <h1 class="greet">Happy birthday Triveni</h1>
+
+        </div>
+        
+    </body>
+</html>
