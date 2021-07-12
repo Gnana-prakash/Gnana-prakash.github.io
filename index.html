@@ -1,6 +1,6 @@
 <html>
     <head>
-        <meta name="viewport" content="intial-scale=1.0,width="device-width">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
         <title>Gnana prakash</title>
         <style>
             @font-face {
@@ -12,105 +12,191 @@
                 src: url(poppinslight.ttf);
             }
             body{
-                margin: 0px;
-                background-color: #061624;
+                margin:0px;
             }
-            .myfooter
+            .myheader
             {
-                width: 100%;
-                height: 10%;
                 background-color: white;
-                background: white;
-                position: fixed;
-                background-color: orange;
-                box-shadow: 2px 3px 10px rgb(212, 138, 0);
+                width:100%;
                 
-            }
-            .myarticle
-            {
-                width: 100%;
-                height: 100%;
-                background: #061624;
-                border:solid transparent;
-                border-top-left-radius: 30px;
-                border-top-right-radius: 30px;
-            }
-            .myarticle pre{
-                color:wheat;
+                box-shadow: 2px 3px 20px rgb(202, 202, 250);
+                padding: 2px;
+                padding-left: 15px;
+                padding-bottom: 10px;
             }
             .heading
             {
-                color:white;
+                color:blue;
                 font-family: poppinsbold;
-                padding-left: 10px;
+                font-size: 20px;
+                
+
+                
+            }
+           
+            .heading2
+            {
+                
+                
+                color:black;
+                font-family: poppinslight;
+                font-size: 12px;
+                
 
             }
-            .content
+            .heading3
             {
-                position: relative;
-                top:9%;
-                padding: 5px;
-                
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color:black;
+                font-family: poppinslight;
+                font-size: 14px;
+            }
+            h1,p{
+                display: inline;
+            }
+            .myarticle
+            {
+                padding: 10px;
             }
             .box
             {
-                background: wheat;
+                background-color: white;
+                border-radius: 15px;
+                box-shadow: 2px 3px 20px #ebebeb;
+                padding: 15px;
+            }
+            .allboxes
+            {
+                
+            }
+            .heading4
+            {
+                color:black;
+                font-family: poppinsbold;
+            }
+            .heading5
+            {
+                font-family: poppinslight;
+                line-height: 17px;
+                font-size: 10px;
+            }
+            .link
+            {
+                color:white;
+                font-family: poppinslight;
+                background-color: blue;
+                text-decoration: none;
                 padding: 5px;
                 border-radius: 5px;
+                font-size: 12px;
+            }
+           
+            
+
+                hr{
+                    color:white;
+                    background-color: white;
+                    border: white;
+                }        
+            .myfooter
+            {
+                width:100%;
+                background-color: rgb(0, 7, 99);
+                padding: 15px;
+                
+            }
+            .heading6
+            {
+                color:rgb(104, 138, 231);
                 font-family: poppinslight;
-                width: 95%;
-                transition: 0.3s;
-                
-                
-
-                
+                font-size: 12px;
 
             }
-            .box:active
+            .link2
             {
-                box-shadow: 2px 3px 20px wheat;
-                width: 93%;
+                color:rgb(104, 138, 231);
+                font-family: poppinslight;
+                font-size: 12px;
             }
-            p{
-                line-height: 20px;
-            }
-            .project-name
-            {
-                font-family: poppinsbold;
-                font-size: 20px;
-            }
-            
-            
-            
-            
         </style>
 
     </head>
     <body>
-        <footer class="myfooter">
-            <p class="heading">Gnana prakash.py</p>
-        </footer>
+        <header class="myheader">
+            <h1 class="heading">Gnana prakash.py</h1>
+            <br>
+            <p class="heading2">My projects</p>
+        </header>
         <article class="myarticle">
-               <div class="content">
-                   <h1 class="heading">My projects</h1>
-                   <div class="box">
-                       <p class="project-name">Pip youtube</p>
-                       <p class="project-content">
-                            This application was made to watch youtube
-                            videos in picture in picture mode
-                       </p>
-                       <a class="link" href="/pipyoutube/">View app-></a>
-                   </div>
-<br/>
-                   <div class="box">
-                    <p class="project-name">3-2 materials</p>
-                    <p class="project-content">
-                         A single zip file was made to download
-                         all materials
+            <p class="heading3">
+                This website is made for broad casting my projects
+            </p>
+            <br>
+            <br>
+            <div class="allboxes">
+                <div class="box">
+                    
+                        <img src="ic_launcher.png" width="40px" height="40px" class="img"/>
+                    <p class="heading4">
+                        Pip youtube
                     </p>
-                    <a class="link" href="/3-2-all-in-one/">View site-></a>
+                    <br>
+                    <p class="heading5">
+                        This app was made to watch youtube videos
+                        in pop up mode which allows users to work productively
+                        without missing the entertainment and content they love to watch
+                        </p>
+                     <hr> <hr>  
+                    <a href="pipyoutube/" class="link">Visit site</a>
                 </div>
-               </div>
+<br>
+                <div class="box">
+                    
+                    <img src="study.png" width="40px" height="40px" class="img"/>
+                <p class="heading4">
+                    Btech 3-2 materials
+                </p>
+                <br>
+                <p class="heading5">
+                    A website was made to download all btech 3-2 semester materials
+                    in a blink of eye without hassle
+                    </p>
+                 <hr> <hr>  
+                <a href="3-2-all-in-one/" class="link">Visit site</a>
+            </div>
+            </div>
+
+            
         </article>
+        <hr>
+        <hr>
+        <hr>
+        <br>
+        <footer class="myfooter">
+            <p class="heading6">About</p>
+            <br>
+            <span>
+                <img src="linkedin.png" width="23px" height="23px">
+                <a href="https://www.linkedin.com/in/gnana-prakash-thottempudi-28537a1b3" class="link2">Visit</a><p class="heading6"> my linked in profile</p>
+            </span>
+            <br>
+            <span>
+                <img src="icons8-instagram-30.png" width="23px" height="23px">
+                <a href="https://www.instagram.com/iamgnanaprakash" class="link2">Visit</a><p class="heading6"> my instagram profile</p>
+            </span>
+            <br>
+            <span>
+                <img src="youtube.png" width="23px" height="23px">
+                <a href="https://youtube.com/channel/UCU00o5sljaaLrfXf9nT12dQ" class="link2">Visit</a><p class="heading6"> my youtube channel</p>
+            </span>
+<br>
+            <span>
+                <img src="telegram.png" width="23px" height="23px">
+                <a href="t.me/iamgnanaprakash" class="link2">Contact</a><p class="heading6"> me on telegram</p>
+            </span>
+
+        </footer>
+
     </body>
 </html>
